@@ -1,0 +1,307 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins';
+ }
+
+ .html{
+      scroll-behavior: smooth;
+ }
+
+ .container {
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(255, 255, 255, 0),transparent),url(/Images/Background.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+}
+
+.logo {
+      width: 150px;
+      height: 40px;
+      cursor: pointer;
+      margin-top: auto;     
+}
+
+@keyframes animatedSquare {
+      0%   {border-radius: 0%;}
+      25%  {border-radius: 80%;
+            transform: translate(200px)}
+}
+
+div {
+      margin: 0%;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(255, 255, 255, 0.062);
+      animation-name: animatedSquare;
+      animation-duration: 3s;
+      animation-iteration-count: 1;    
+}
+  
+header {
+      display: flex;
+      width: 100%;
+      color: rgb(9, 71, 102);
+      background-color: rgba(60, 126, 129, 0);
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0px 0px;
+}
+
+header ul{
+      flex: 1;
+      text-align: right;     
+}
+
+header ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 0px 30px;
+      background-color: rgba(255, 255, 255, 0);    
+}
+
+header ul li a{
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+      position: relative;
+}
+
+header ul li a::after{
+      content:"";
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translate(-50%);
+      transition: width 0.3s;
+}
+
+header ul li a:hover::after{
+      width: 80%;
+      background: rgb(30, 55, 196);
+}
+
+.text{ 
+      color: black;
+      background-color: transparent;
+      position: absolute;
+      bottom: 30%;
+}
+
+.text p{
+      font-size: 40px;
+      color: rgb(5, 5, 5) ;
+      font-weight: 600;
+      margin-left: 30px;    
+}
+
+.text h1{
+      font-size: 70px;
+      width: 900px;
+      line-height: 90px;
+      margin-left: 60px;
+      -webkit-text-stroke: 1px #2522d1; 
+      background: url('/Images/Back.jpg');
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-position: 0 0;
+      animation: back 100s linear infinite;
+}
+
+@keyframes back{
+      100%{
+            background-position: 2000px 0;
+      }
+}
+
+.text h3{ 
+      font-size: 30px;
+      width: 1000px;
+      color: rgb(30, 55, 196);
+      font-weight: 500;
+      margin-left: 300px;
+}
+
+.text button {
+      content: url();
+      background-color: rgb(48, 108, 165);
+      margin-left: 150px;
+      margin-top: 50px;
+}
+
+.about {
+      width: 100%;
+      padding: 350px;
+      height: 850px;
+      background-color: rgba(45, 67, 133, 0.171);
+}
+
+.about img{
+      margin-top: -300px;
+      height: 750px;
+      width: 500px;
+      margin-left: -350px;
+      border-radius: 100px;     
+}
+
+.about-text{
+      background-color: transparent;
+      width: 700px;
+}
+
+.main{ 
+      background-color: transparent; 
+      margin-top: -700px;
+      margin-left: 350px;
+
+}
+.about-text h2{
+      color: rgb(0, 0, 0);
+      font-size: 25px;
+      margin-bottom: 35px;
+      text-decoration-line: underline;
+}
+
+.about-text p{
+      font-family: 'poppins';
+      color: #2522d1;
+      letter-spacing: 1px;
+      line-height: 28px;
+      font-size: 18px;
+      margin-bottom: 45px;
+}
+
+button{
+      content: "";
+      cursor: pointer;
+      background-color: #8b8b8b;
+      color: #000000;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: 0.2s;
+
+}
+button:hover{
+      background-color: transparent;
+      border: 4px solid rgb(30, 55, 196);
+}
+
+
+
+.education {
+      padding: 50px;
+      background-color: transparent;
+      background-color: #8b8b8b;
+      font-family: 'poppins';
+}
+
+.education h2 {
+      font-size: 25px;
+      text-decoration-line: underline;
+}
+
+.education ul {
+      padding: 0px 30px;
+}
+
+.education img {
+      padding: 10px 10px;
+      width: 500px;
+      height: 500px;
+      border-radius: 100%;
+      position: absolute;
+      float: right;
+      left: 700px;
+      top: 1900px;
+}
+
+.experience {
+      padding: 40px;
+      background: url(/Images/sunsetovertheocean.jpg);
+      width: 100%;
+}
+
+.experience h2 {
+      font-size: 25px;
+      text-decoration-line: underline;
+}
+
+footer{
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: #226d60;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+footer h2{
+      font-size: 25px;
+      color: rgb(0, 0, 0);
+      margin-top: 30px;
+      font-weight: bold;
+      text-decoration-line: underline;
+}  
+
+footer h3{
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      width: 500px;
+      text-align: center;
+      line-height: 26px;
+      justify-content: center;
+      margin-top: 20px;
+}
+
+.social{
+      background: transparent;
+      display: flex;
+      width: 400px;
+      height: 400px;
+
+}
+
+.social a{
+      background-color: #226d60;
+      width:100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(151, 170, 169, 0);
+      border-radius: 80%;
+      margin: 10px -5px;
+}
+
+.social a{
+      background-color: #226d60;
+      color: #000000;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 12px 30px;
+      transition: 0.2s;
+}
+
+.social a:hover{
+      background-color: transparent;
+      border-bottom: 4px solid rgb(30, 55, 196);
+}
+
+.end{
+      position: absolute;
+      color: #020202;
+      bottom: 35px;
+      font-size: 16px;
+}
